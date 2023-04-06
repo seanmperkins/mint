@@ -52,14 +52,6 @@ Icon
 
 # Data files
 *.mat
-*.h5
-*.csv
-*.nwb
-*.yaml
-data/area2_bump/nwb/
-data/dmfc_rsg/nwb/
-data/mc_maze/nwb/
-data/mc_maze_large/nwb/
-data/mc_maze_medium/nwb/
-data/mc_maze_small/nwb/
-data/mc_rtt/nwb/
+
+# Mex file.
+core/recursion/recursion_mex.mexmaci64
