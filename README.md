@@ -1,5 +1,5 @@
 # MINT (Mesh of Idealized Neural Trajectories)
-This repository is the official implementation of MINT, a decode algorithm for brain-computer interfaces developed in the [Churchland lab](https://churchland.zuckermaninstitute.columbia.edu/). The method is described in detail in a preprint (submission to bioRxiv in process, will be available online within 24-48 hours):
+This repository is the official implementation of MINT, a decode algorithm for brain-computer interfaces developed in the [Churchland lab](https://churchland.zuckermaninstitute.columbia.edu/). The method is described in detail in a [preprint](https://www.biorxiv.org/content/10.1101/2023.04.05.535396v1):
 
 **Perkins, S., Cunningham, J., Wang, Q., & Churchland, M. (2023). Simple decoding of behavior from a complicated neural manifold. *bioRxiv*.**
 
@@ -11,7 +11,7 @@ For convenience, the abstract is reproduced here:
 ### Downloading Data
 Navigate to the `data` directory and run the `download_data` script. This will automatically download three datasets: Area2_Bump, MC_Maze, and MC_RTT. 
 
-Area2_Bump contains neural recordings from area2 of somatosensory cortex while a monkey uses a manipulandum to make center-out reaches or is perturbed outward by the manipulandum. MC_Maze contains neural recordings from M1 and PMd while a monkey makes delayed center-out curved and straight reaches. MC_RTT contains neural recordings from M1 while a monkey makes self-paced reaches in an 8x8 grid. More information on these datasets can be found in the paper or in [the repository for alternative decoders](https://github.com/seanmperkins/bci-decoders) that MINT is compared to in the paper.
+Area2_Bump contains neural recordings from area2 of somatosensory cortex while a monkey uses a manipulandum to make center-out reaches or is perturbed outward by the manipulandum. MC_Maze contains neural recordings from M1 and PMd while a monkey makes delayed center-out curved and straight reaches. MC_RTT contains neural recordings from M1 while a monkey makes self-paced reaches in an 8x8 grid. More information on these datasets can be found in the [preprint](https://www.biorxiv.org/content/10.1101/2023.04.05.535396v1) or in [the repository for alternative decoders](https://github.com/seanmperkins/bci-decoders) that MINT is compared to in the paper.
 
 ### Running MINT
 To get started, first refer to the 'Requirements' section below to ensure the necessary MATLAB toolboxes are installed. Then, simply execute the `run_decoder` script in the directory `run`. By default, this will run MINT on the Area2_Bump dataset, but you can modify which dataset you'd like to run in the script. To re-run with different hyperparameters, simply edit the config files in `run/+config` and re-execute `run_decoder`.
